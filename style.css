@@ -1,0 +1,112 @@
+
+.grid_container{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10rem;
+    margin: 0rem;
+    padding: .5rem 5rem .5rem 5rem;
+    font-family: 'Work Sans';
+    box-shadow: 0rem .25rem 2rem 0rem rgba(0, 0, 0, 0.05);
+}
+.grid_container .left{
+    display: inline-grid;
+    gap: 1rem;
+    grid-template-columns: .1fr .1fr;
+    justify-items: center;
+}
+.grid_container .left-text{
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0rem;
+    margin: 0rem;
+    }
+.grid_container .left-text span{
+    color: #ff42a5;
+}
+.grid_container .left-img{
+    margin-top: 2rem;
+    size: auto;
+    }
+.grid_container .right{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-content: space-around;
+    justify-items: stretch;
+    align-items: center;
+}
+.grid_container .right .menu{
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+}
+.grid_container .right .btn{
+    display: inline-grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    background-color: gainsboro;
+    justify-items: center;
+    border-radius: 5px;
+}
+.pink-btn{
+    background-color:#ff42a5 ;
+    border-radius: 2rem;
+}
+.blue-btn{
+    background-color: #4EC5F7;
+    border-radius: 2rem;
+}
+.white-btn{
+    background-color: #fff;
+    border-radius: 2rem;
+}
+.first-benner{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0rem;
+    padding: .5rem 5rem .5rem 5rem;
+    /* gap: 10rem; */
+
+}
+.first-benner .benner-left{
+
+}
+.first-benner .benner-right{
+    border: 1px solid red;
+    
+}
+.first-benner .benner-right img{
+    width: 100%;
+}
+.first-benner .benner-left .ico1{
+    align-items: start;
+    background-color: aquamarine;
+}
+
+
+@media screen and (max-width: 570px) {
+    .grid_container{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 0rem;
+    }
+    .grid_container .left{
+        display: grid;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .grid_container .right{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    .grid_container .right .menu{
+        grid-template-columns: 1fr; 
+    }
+    .grid_container .right .menu p{
+        display: grid;
+        justify-content: space-around;
+        border-radius: 5px;
+    }
+}
