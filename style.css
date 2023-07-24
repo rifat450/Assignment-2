@@ -4,7 +4,7 @@
     grid-template-columns: auto auto;
     gap: 10rem;
     margin: 0rem;
-    padding: .5rem 5rem .5rem 5rem;
+    padding: .5rem 10rem .5rem 10rem;
     font-family: 'Work Sans';
     box-shadow: 0rem .25rem 2rem 0rem rgba(0, 0, 0, 0.05);
 }
@@ -51,44 +51,149 @@
 .pink-btn{
     background-color:#ff42a5 ;
     border-radius: 2rem;
+    border: none;
+    color: #fff;
+    width: 8rem;
+    height: 3rem;
+    margin-right: 1rem;
 }
 .blue-btn{
     background-color: #4EC5F7;
     border-radius: 2rem;
+    border: none;
+    color: #fff;
+    width: 10rem;
+    height: 3rem;
 }
 .white-btn{
     background-color: #fff;
     border-radius: 2rem;
+
 }
 .first-benner{
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin: 0rem;
-    padding: .5rem 5rem .5rem 5rem;
-    /* gap: 10rem; */
-
 }
 .first-benner .benner-left{
-
+font-family: 'Work Sans';
+padding-left:10rem ;
+margin-bottom: 5rem;
+margin-top: 5rem;
+}
+.first-benner .benner-left h3{
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+    margin: 0rem;
+    /* padding: 8rem 5rem 0rem 0rem; */
+}
+.first-benner .benner-left h1{
+    font-size: 6rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    text-transform: uppercase;
+    margin: 0rem;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.first-benner .benner-left p{
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: lowercase;
 }
 .first-benner .benner-right{
-    border: 1px solid red;
-    
+    padding-right: 10rem;
+    margin-top: 5rem;
 }
 .first-benner .benner-right img{
     width: 100%;
 }
 .first-benner .benner-left .ico1{
-    align-items: start;
-    background-color: aquamarine;
+    display: grid;
+    grid-template-columns: .15fr 2fr;
+    align-items: center;
 }
-
-
+.first-benner .benner-left .ico2{
+    display: grid;
+    grid-template-columns: .15fr 2fr;
+    align-items: center;
+}
+.first-benner .benner-left .ico3{
+    display: grid;
+    grid-template-columns: .15fr 2fr;
+    align-items: center;
+}
+.second-benner{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin: 0rem;
+    align-items: center;
+    padding-top: 0rem;
+    background-color: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
+}
+/* .second-benner .benner-left{
+    padding-left: 10rem;
+    margin-top: 5rem;
+} */
+.second-benner .second-benner-left img{
+    width: 80%;
+    padding-left: 10rem;
+}
+.second-benner .second-benner-right{
+    font-family: 'Work Sans';
+    padding-right:10rem;
+    text-align: end;
+}
+.second-benner .second-benner-right h3{
+    text-align: right;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.second-benner .second-benner-right .large-text{
+    color: #534C64;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.8rem;
+}
+.second-benner .second-benner-right .pink{
+    margin: 0rem;
+}
+.second-benner .second-benner-right .small-text{
+    color: #534C64;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 187.5%; /* 187.5% */
+}
+.second-benner .second-benner-right .small-text span{
+    font-weight: 700;
+}
 @media screen and (max-width: 570px) {
     .grid_container{
         display: grid;
         grid-template-columns: 1fr;
         gap: 0rem;
+        padding: 0rem;
+        margin: 0rem;
+        border: 2px solid cadetblue;
+        width: 100%;
+        
     }
     .grid_container .left{
         display: grid;
@@ -100,6 +205,8 @@
         display: grid;
         grid-template-columns: 1fr;
         gap: 1rem;
+        padding: 0rem;
+        margin: 0rem;
     }
     .grid_container .right .menu{
         grid-template-columns: 1fr; 
@@ -108,5 +215,88 @@
         display: grid;
         justify-content: space-around;
         border-radius: 5px;
+    }
+    .grid_container .right .btn{
+        padding:0rem;
+        margin: 0rem 8rem 1rem 8rem;
+    }
+    .first-benner{
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        gap: 2rem;
+        margin: 0rem;
+        /* width: auto; */
+    }
+    .first-benner .benner-left{
+        display: grid;
+        justify-content: center;
+        padding: 1rem 0rem;
+        margin: 0rem;
+        border: 2px solid gold;
+        
+    }
+    .first-benner .benner-left h1{
+        font-size: 4.6rem;
+        text-align: left;
+    }
+    .first-benner .benner-left h3{
+        font-size: 2.3rem;
+        text-align: left;
+    }
+    .first-benner .benner-left p{
+        font-size: .9rem;
+        text-align: left;
+        padding-left: .5rem;
+    }
+    .first-benner .benner-left .pink-btn{
+        width: 6rem;
+        height: 2.5rem;
+    }
+    .first-benner .benner-left .blue-btn{
+        width: 8rem;
+        height: 2.5rem;
+        margin-left: 1rem;
+    }
+    .first-benner .benner-right{
+        display: grid;
+        gap: 1rem;
+        order: -1;
+        margin: 0rem;
+        padding: 0rem 2rem;
+        border: 2px solid #8758F1;
+        width: auto;
+    }
+    .second-benner{
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 0rem;
+        margin: 0rem;
+        border: 2px solid blueviolet ;
+    }
+    .second-benner .second-benner-left img{
+        margin: 2rem 3rem 0rem 3rem;
+        padding: 0rem;
+        width: 85%;
+    }
+    .second-benner .second-benner-right{
+        margin: 0rem;
+        padding: 0rem 4rem ;
+        text-align: center;
+    }
+    .second-benner .second-benner-right h3{
+        font-size: 2.5rem;
+        text-align: center;
+    }
+    .second-benner .second-benner-right .large-text{
+        font-size: .8rem;
+    }
+    .second-benner .second-benner-right .small-text{
+        font-size: 1.2rem;
+    }
+    .second-benner .second-benner-right .pink-btn{
+        font-size: .7rem;
+        width: 7rem;
+        height: 2.5rem;
     }
 }
