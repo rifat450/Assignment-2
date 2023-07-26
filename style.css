@@ -140,10 +140,6 @@ margin-top: 5rem;
     padding-top: 0rem;
     background-color: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
 }
-/* .second-benner .benner-left{
-    padding-left: 10rem;
-    margin-top: 5rem;
-} */
 .second-benner .second-benner-left img{
     width: 80%;
     padding-left: 10rem;
@@ -184,6 +180,135 @@ margin-top: 5rem;
 .second-benner .second-benner-right .small-text span{
     font-weight: 700;
 }
+.third-benner{
+    display: grid;
+    grid-template-areas: 
+    "four-slide four-slide four-slide four-slide";
+    margin: 0rem;
+    padding-left: 5rem;
+    gap: .5rem;
+    justify-content: center;
+}
+.third-benner-heading{
+    font-family: 'Work Sans';
+    text-align: center;
+}
+.third-benner-heading span{
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.third-benner-heading h2{
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 5rem 0rem 0rem;
+}
+.third-benner-heading p{
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 3rem;
+}
+.third-benner .four-slide img{
+    margin: 0rem;
+    padding: 0rem;
+    width: 12rem;
+    height: 15rem;
+}
+.third-benner .four-slide p{
+    width: auto;
+    text-align: left;
+    margin-right: 4.6rem;
+}
+.fourth-benner{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    margin-top: 5rem;
+    font-family: 'Work Sans';
+}
+.fourth-benner .first-img{
+    position: absolute;
+    width: 33%;
+    margin-left: 5rem;
+    border: 2px solid #4EC5F7;
+}
+.fourth-benner .second-img{
+    position: relative;
+    width: 30%;
+    margin-top: 20rem;
+}
+.fourth-benner .fourth-left h3{
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 4rem;
+}
+.fourth-benner .fourth-left p{
+    color: #534C64;
+    text-align: left;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.8rem; /* 166.667% */
+    margin-left: 0em;
+}
+.fourth-benner .fourth-left{
+    margin-left: 12rem;
+}
+.fourth-benner .fourth-left span{
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    }
+
+/* needs work............... */
+.fifth-benner{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 5rem;
+    font-family: 'Work Sans';
+}
+.fifth-benner .fifth-left{
+    order: -1;
+}
+.fifth-benner .first-img{
+    position: absolute;
+    width: 33%;
+    margin-left: 5rem;
+    border: 2px solid #4EC5F7;
+}
+.fifth-benner .second-img{
+    position: relative;
+    width: 30%;
+    margin-top: 18rem;
+    margin-left: 25rem;
+}
+.fifth-benner .fifth-left h3{
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 4rem;
+}
+.fifth-benner .fifth-left p{
+    color: #534C64;
+    text-align: left;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.8rem; /* 166.667% */
+    margin-left: 0em;
+}
+.fifth-benner .fifth-left{
+    margin-left: 12rem;
+}
+.fifth-benner .fifth-left span{
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    }
 @media screen and (max-width: 570px) {
     .grid_container{
         display: grid;
@@ -191,9 +316,7 @@ margin-top: 5rem;
         gap: 0rem;
         padding: 0rem;
         margin: 0rem;
-        border: 2px solid cadetblue;
         width: 100%;
-        
     }
     .grid_container .left{
         display: grid;
@@ -217,8 +340,8 @@ margin-top: 5rem;
         border-radius: 5px;
     }
     .grid_container .right .btn{
-        padding:0rem;
-        margin: 0rem 8rem 1rem 8rem;
+        padding:0rem .5rem;
+        margin: 0rem 7rem 2rem 7rem;
     }
     .first-benner{
         display: grid;
@@ -226,22 +349,19 @@ margin-top: 5rem;
         justify-content: center;
         gap: 2rem;
         margin: 0rem;
-        /* width: auto; */
     }
     .first-benner .benner-left{
         display: grid;
         justify-content: center;
         padding: 1rem 0rem;
         margin: 0rem;
-        border: 2px solid gold;
-        
     }
     .first-benner .benner-left h1{
-        font-size: 4.6rem;
+        font-size: 4rem;
         text-align: left;
     }
     .first-benner .benner-left h3{
-        font-size: 2.3rem;
+        font-size: 2rem;
         text-align: left;
     }
     .first-benner .benner-left p{
@@ -256,7 +376,7 @@ margin-top: 5rem;
     .first-benner .benner-left .blue-btn{
         width: 8rem;
         height: 2.5rem;
-        margin-left: 1rem;
+        margin-left: .5rem;
     }
     .first-benner .benner-right{
         display: grid;
@@ -264,7 +384,6 @@ margin-top: 5rem;
         order: -1;
         margin: 0rem;
         padding: 0rem 2rem;
-        border: 2px solid #8758F1;
         width: auto;
     }
     .second-benner{
@@ -272,12 +391,11 @@ margin-top: 5rem;
         grid-template-columns: 1fr;
         padding: 0rem;
         margin: 0rem;
-        border: 2px solid blueviolet ;
     }
     .second-benner .second-benner-left img{
         margin: 2rem 3rem 0rem 3rem;
         padding: 0rem;
-        width: 85%;
+        width: 80%;
     }
     .second-benner .second-benner-right{
         margin: 0rem;
@@ -287,6 +405,7 @@ margin-top: 5rem;
     .second-benner .second-benner-right h3{
         font-size: 2.5rem;
         text-align: center;
+        margin-top: 0rem;
     }
     .second-benner .second-benner-right .large-text{
         font-size: .8rem;
@@ -298,5 +417,86 @@ margin-top: 5rem;
         font-size: .7rem;
         width: 7rem;
         height: 2.5rem;
+    }
+    .third-benner-heading p{
+        align-items: center;
+        padding: 0rem;
+        font-size: 1rem;
+        word-wrap: break-word;
+        margin: 1.5rem 6rem;
+    }
+    .third-benner-heading h2{
+        align-items: center;
+        padding: 0rem 1rem;
+        margin: 1rem;
+        font-size: 1.8rem;
+        word-wrap: break-word;
+    }
+    .third-benner{
+        grid-template-areas: "first"
+        "second"
+        "third"
+        "fourth";
+        align-items: center;
+        margin: 0rem 1rem;
+        padding-left: 6rem;
+    }
+    .third-benner .four-slide img{
+        width: 70%;
+    }
+    .third-benner .four-slide p{
+        word-wrap: break-word;
+        text-align: left;
+        margin: 1rem 6.5rem 1rem 0rem;
+    }
+    .fourth-benner{
+        grid-template-columns: 1fr;
+    }
+    .fourth-benner .fourth-left{
+        font-size: 1.5rem;
+        margin: 0rem;
+        padding: 0rem;
+        font-weight: 500;
+        text-align: center;
+    }
+    .fourth-benner .fourth-left p{
+        font-size: 1.3rem;
+        margin: 0rem 4rem;
+        padding: 0rem .5rem;
+        font-weight: 400;
+        text-align: center;
+        word-wrap: break-word;
+    }
+    .fourth-benner .fourth-right .first-img{
+        width: 65%;
+        align-items: right;
+    }
+    .fourth-benner .fourth-right .second-img{
+        margin: 12rem 0rem 0rem 2rem ;
+    }
+    .fifth-benner{
+        grid-template-columns: 1fr;
+    }
+    .fifth-benner .fifth-left{
+        font-size: 1.5rem;
+        margin: 0rem;
+        padding: 0rem;
+        font-weight: 500;
+        text-align: center;
+    }
+    .fifth-benner .fifth-left p{
+        font-size: 1.3rem;
+        margin: 0rem 4rem;
+        padding: 0rem .5rem;
+        font-weight: 400;
+        text-align: center;
+        word-wrap: break-word;
+    }
+    .fifth-benner .fifth-right .first-img{
+        width: 65%;
+        align-items: right;
+    }
+    .fifth-benner .fifth-right .second-img{
+        margin: 12rem 0rem 0rem 20rem ;
     }
 }
